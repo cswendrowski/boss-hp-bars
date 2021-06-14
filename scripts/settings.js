@@ -77,7 +77,7 @@ export const registerSettings = function () {
         onChange: value => { updateHud(value); }
     });
 
-    const roles = Object.entries(USER_ROLES)
+    const roles = Object.entries(CONST.USER_ROLES)
     .filter(([key, val]) => val !== 0)
     .reduce((roles2, [permission, val]) => {
         roles2[val] = permission;
